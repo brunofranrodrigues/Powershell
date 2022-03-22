@@ -3,7 +3,7 @@ $sqlServer = "10.156.14.23"
 $sqlDB = "uoldiveo-dw"
 $sqlTable = "fato_symantec"
 $uid = "symantec"
-$pwd = "q1w2e3r4"
+$pwd = "xxxxxx"
 
 $Logfile = "D:\Task-Export\proc_$env:computername.log"
 function WriteLog
