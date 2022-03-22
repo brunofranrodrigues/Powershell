@@ -2,7 +2,7 @@
 $DataBase = "uoldiveo-dw" #Database
 $table="fato_symantec" #Table
 $Username = "symantec" #User
-$Password = "q1w2e3r4" #Password
+$Password = "xxxxxx" #Password
 $Query = "SELECT * FROM fato_symantec;"
 $data = Invoke-SQLCMD -ServerInstance $SQLServer -Database $DataBase -Query $Query -Username $Username -Password $Password -Verbose
 #$i=0
