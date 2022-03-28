@@ -1,9 +1,9 @@
 ﻿#Config SQLServer
 $sqlServer = "10.156.14.23"
-$sqlDB = "uoldiveo-dw"
-$sqlTable = "fato_symantec"
-$uid = "symantec"
-$pwd = "xxxxxx"
+$sqlDB = "banco"
+$sqlTable = "tabela_symantec"
+$uid = "usuario"
+$pwd = "senha"
 
 $Logfile = "D:\Task-Export\proc_$env:computername.log"
 function WriteLog
@@ -16,7 +16,7 @@ Add-content $LogFile -value $LogMessage
 
 WriteLog "Create export from Sybase Symantec Endpoint Protection Manager to CSV”
 #Create export from Sybase Symantec Endpoint Protection Manager to CSV
-& "C:\Program Files (x86)\Symantec\Symantec Endpoint Protection Manager\ASA\win32\dbisqlc.exe" -ODBC -c "DSN=SymantecEndpointSecurityDSN;UID=dba;PWD=Hymtecse#4096" D:\Task-Export\SQLExport.sql
+& "C:\Program Files (x86)\Symantec\Symantec Endpoint Protection Manager\ASA\win32\dbisqlc.exe" -ODBC -c "DSN=SymantecEndpointSecurityDSN;UID=dba;PWD=P@ssw0rd" D:\Task-Export\SQLExport.sql
 
 Start-Sleep -s 4
 WriteLog "Making changes to the file D:\Task-Export\hosts_status.csv"
