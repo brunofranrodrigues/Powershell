@@ -1,5 +1,5 @@
 ﻿#Config SQLServer
-$sqlServer = "10.156.14.23"
+$sqlServer = "192.168.2.1"
 $sqlDB = "banco"
 $sqlTable = "tabela_symantec"
 $uid = "usuario"
